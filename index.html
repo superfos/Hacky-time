@@ -1,0 +1,100 @@
+<style type="text/css">
+body {
+  background-color: #c4c5d6;
+}
+  
+h1 {
+  font-family: serif;
+  text-align: center;
+}
+
+h3 {
+  font-family: serif;
+  text-align: center;
+}
+
+p {
+  font-weight: bold;
+  text-align: center; 
+}
+
+#pictures {
+  text-align: center;
+}
+  
+#titles {
+  text-align: center; 
+}
+  
+#button:active {
+  transform: translateY(4px);
+  background-color: #3e8e41;
+  box-shadow: 5px 5px 5px 5px #666;
+}
+  
+img {
+  padding:;
+  border-color: black;
+  border-style: solid;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+  
+</style>
+
+<html>
+<head>
+    <title>
+    Soprano Rear
+    </title>
+    
+<div id="titles">
+<h3>Welcome to:</h3>
+
+<h1>Soprano Rear!</h1>
+
+  <p>I really, <i>really</i> hope you enjoy our lovely sounds</p> 
+  </div>
+<body>
+  
+  <audio id="sound1">
+  <source src = "sax.wav" type = "audio/wav">
+  </audio>
+  
+  <audio id="sound2">
+  <source src = "riff.mp3" type = "audio/mp3">
+  </audio>
+  
+  <audio id="sound3">
+  <source src = "singer.wav" type = "audio/wav">
+  </audio>
+  
+  <div id="pictures">
+    <img id= "button" src="http://2.bp.blogspot.com/_j62zt7Y983s/S0lKVtxYf6I/AAAAAAAAANU/x8MT5AFXRms/s1600/Bald+butt+cropped.jpg" width= "%50" height="50%" onclick="sound1()"> 
+    <img id= "button" src="https://c2.staticflickr.com/6/5100/5579693541_124659c6af_b.jpg" width= "%50" height="50%" onclick="sound2()"> 
+    <img id= "button" src="https://thedvrfiles.files.wordpress.com/2013/01/donkey-booty.jpg" width= "%50" height="50%" onclick="sound3()">
+    <p></p>
+  </div>
+
+<script>
+  
+  var x = document.getElementById("sound1");
+  var y = document.getElementById("sound2");
+  var z = document.getElementById("sound3");
+  
+  
+  function sound1(){
+    x.play();
+  }
+  
+  function sound2(){
+    y.play();
+  }
+  
+  function sound3(){
+    z.play();
+  }
+  </script>
+</body>
+
+</html>
